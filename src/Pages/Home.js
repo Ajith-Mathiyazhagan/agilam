@@ -1,7 +1,7 @@
 import React from "react";
 import bg1 from "../assets/blood1.jpg";
 import edu from "../assets/edu.png";
-
+import anna from "../assets/aa.png";
 import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
 import bg from "../assets/bg2.png";
@@ -46,6 +46,15 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container ">
         <div className="row align-items-center flex-md-row">
+            {/* Image Second */}
+           <div className="col-12 col-md-6 text-center">
+            <img
+              src={anna}
+              alt="hero"
+              className="img-fluid rounded-4 shadow-lg"
+              style={{ maxHeight: "500px", objectFit: "cover" }}
+            />
+          </div> 
           {/* Text First */}
           <div className="col-12 col-md-6 text-center text-md-start  mb-md-0">
             <h1 className="fw-bold text-danger mb-3">{content.title}</h1>
@@ -58,15 +67,7 @@ const Home = () => {
             </a>
           
           </div>
-          {/* Image Second */}
-         {/*  <div className="col-12 col-md-6 text-center">
-            <img
-              src={anna}
-              alt="hero"
-              className="img-fluid rounded-4 shadow-lg"
-              style={{ maxHeight: "500px", objectFit: "cover" }}
-            />
-          </div> */}
+        
         </div>
       </section>
   <div className=" container  mb-2 mx-auto ">
