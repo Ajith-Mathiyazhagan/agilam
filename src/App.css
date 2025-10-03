@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+.navbar{
+background-color: #220963;
+  
+  position: fixed;
+}
+body {
+  padding-top: 60px;
+   /* adjust based on navbar height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 🔹 Image hover zoom only */
+.img-wrapper {
+  overflow: hidden;
 }
+.img-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.img-wrapper img:hover {
+  transform: scale(1.1);
+}
+.landingimg{
+border-radius: 40px 40px 40px 0px;
+}
+.bg{
+    
+  background-size: 400% 400%;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+/* marqueee */
+.marquee {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.marquee-inner {
+  display: flex;
+  animation: marquee 50s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* moves half because we duplicated */
+}
+
+
+/* Add this to your CSS file */
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 1.5rem 2.5rem rgba(255, 0, 25, 0.15), 0 0.5rem 1rem rgba(0,0,0,0.05);
 }
