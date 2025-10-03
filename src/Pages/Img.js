@@ -25,10 +25,12 @@ import h19 from "../assets/h (19).jpg";
 import h20 from "../assets/h (20).jpg";
 import h21 from "../assets/h (21).jpg";
 
+const images = [
+  annan, annan2, imm, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, 
+  h13, h14, h15, h16, h17, edu, h18, h19, h20, h21
+];
 
-const images = [ annan, annan2, imm, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16, h17,edu, h18, h19, h20, h21]; // add more if needed
-
-const ImgMarquee = () => {
+const Img = () => {
   return (
     <div
       className="container-fluid my-2"
@@ -47,8 +49,9 @@ const ImgMarquee = () => {
             className="p-1 border-0 rounded-4 shadow-sm bg-white text-center"
             style={{ flex: "0 0 auto", width: "260px", marginRight: "15px" }}
           >
-            <img src={img}
-              alt={ `Image ${index + 1}`}
+            <img 
+              src={img}
+              alt="" // ✅ ESLint safe: decorative images
               className="img-fluid rounded-4"
               style={{ height: "150px", objectFit: "cover", width: "100%" }}
             />
@@ -67,4 +70,4 @@ const ImgMarquee = () => {
   );
 };
 
-export default ImgMarquee;
+export default Img;
