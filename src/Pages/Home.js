@@ -1,7 +1,7 @@
 import React from "react";
 import bg1 from "../assets/blood1.jpg";
 import edu from "../assets/edu.png";
-import anna from "../assets/aa.png";
+
 import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
 import bg from "../assets/bg2.png";
