@@ -5,10 +5,10 @@ import anna from "../assets/aa.png";
 import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
 import bg from "../assets/bg2.png";
-
+import Img from "./Img";
 const Home = () => {
   const content = {
-    title: "அகிலம் நண்பர்கள் அறக்கட்டளை",
+    title: "அகிலம் நண்பர்கள் அறக்கட்டளை 🤝",
     desc: "எங்கள் சேவைகள் மூலம் சமூகத்தில் நல்ல மாற்றத்தை உருவாக்க முயல்கிறோம்.",
     cards: [
       {
@@ -37,8 +37,8 @@ const Home = () => {
   return (
     <div
       style={{
-        minHeight: "100vh",
-        paddingTop: "50px",
+        
+        paddingTop: "20px",
         background: `linear-gradient(135deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.04) 60%), url(${bg}) center/cover no-repeat fixed`,
      
       }}
@@ -51,18 +51,18 @@ const Home = () => {
             <img
               src={anna}
               alt="hero"
-              className="img-fluid rounded-4 shadow-lg"
+              className="img-fluid rounded-2 shadow-lg"
               style={{ maxHeight: "500px", objectFit: "cover" }}
             />
           </div> 
           {/* Text First */}
-          <div className="col-12 col-md-6 text-center text-md-start  mb-md-0">
-            <h1 className="fw-bold text-danger mb-3">{content.title}</h1>
-            <p className="text-dark fw-semibold fs-5 mb-4">{content.desc}</p>
-            <a href="#join" className="btn btn-danger btn-lg shadow fw-bold mb-3 px-4 mx-1">
+          <div className="col-12 col-md-6 text-center text-md-start p-3  mb-md-0">
+            <h2 className="fw-bold h1  text-danger mb-2">{content.title}</h2>
+            <p className="text-dark fw-semibold  mb-4">{content.desc}</p>
+            <a href="#join" className="btn btn-danger btn shadow fw-bold mb-3  mx-1">
               குருதித் தேவைக்கு 
             </a>
-             <a href="#join" className="btn btn-primary btn-lg shadow fw-bold mb-3 px-4 mx-1">
+             <a href="#join" className="btn btn-primary btn shadow fw-bold mb-3 px-3 mx-1">
              குருதி தந்து உதவ
             </a>
           
@@ -70,17 +70,17 @@ const Home = () => {
         
         </div>
       </section>
-  <div className=" container  mb-2 mx-auto ">
-              <blockquote className="fw-bold fst-italic text-danger fs-5 mb-1">
+  <div className=" container  mb-2 mx-auto text-center">
+              <blockquote className="fw-bold fst-italic  text-danger fs-6 mb-1">
                 ✨ “அன்பும் சேவையும் சேர்ந்தால், சமூகத்தில் ஒளி விரிகிறது.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-success fs-5">
+              <blockquote className="fw-bold fst-italic text-success fs-6">
                 ✨ “சமூக சேவை என்பது உதவி அல்ல, அது ஒவ்வொருவரின் பொறுப்பு.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-success fs-5">
+              <blockquote className="fw-bold fst-italic text-info fs-6">
                 ✨ “அன்பும் கருணையும் இணைந்தால், சமூக மாற்றம் சக்திவாய்ந்ததாகிறது.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-success fs-5">
+              <blockquote className="fw-bold fst-italic text-primary fs-6">
                 ✨ “நாம் பகிரும் அன்பு, சமூகத்தில் நம்பிக்கை உருவாக்கும்.”
               </blockquote>
             </div>
@@ -88,15 +88,15 @@ const Home = () => {
 
       {/* Mission & Vision */}
       <section className="container py-2">
-        <div className="row g-2">
+        <div className="row g-1">
           <div className="col-md-6 mb-2 mt-md-0">
-            <div className="p-4 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
+            <div className="p-3 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
               <h4 className="text-danger mb-2 fw-bold">🎯 எங்கள் நோக்கம்</h4>
               <p className="text-muted mb-0">அனைவருக்கும் சமத்துவமான சமூக சேவை</p>
             </div>
           </div>
           <div className="col-md-6 mb-2 mt-md-0">
-            <div className="p-4 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
+            <div className="p-3 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
               <h4 className="text-success mb-2 fw-bold">🌱 எங்கள் பார்வை</h4>
               <p className="text-muted mb-0">கல்வி, ஆரோக்கியம், சமூக முன்னேற்றம்</p>
             </div>
@@ -105,13 +105,13 @@ const Home = () => {
       </section>
 
       {/* Quote Section */}
-      <section className="container text-center py-2">
-        <p className="fs-5 text-primary mb-0">
+      <section className="container text-center py-1">
+        <p className="fs-6 text-primary mb-0">
           🌿 “ஒரு சிறிய சேவை கூட, சமூகத்தில் பெரிய மாற்றத்தை உருவாக்கும்.”
         </p>
       </section>
           {/* Cards Section */}
-       <section className="container py-4">
+       <section className="container py-3">
         <div className="row g-4">
           {content.cards.map((card, idx) => (
             <div key={idx} className="col-12 col-sm-6 col-lg-3">
@@ -133,6 +133,7 @@ const Home = () => {
           ))}
         </div>
       </section> 
+      <Img/>
     </div>
   );
 };

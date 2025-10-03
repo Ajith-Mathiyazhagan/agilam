@@ -7,7 +7,7 @@ import 'animate.css';
 import Home from './Pages/Home';
 import Header from './Pages/Header';
 import { useEffect } from 'react';
-
+import Img from './Pages/Img';
 
 
 function App() {
@@ -23,6 +23,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Header' element={<Header/>}></Route>
+        <Route path='/Img' element={<Img/>}></Route>
+
       </Routes>
     
     </div>
