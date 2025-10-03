@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import Header from './Pages/Header';
 import { useEffect } from 'react';
 import Img from './Pages/Img';
+import Footer from './Pages/Footer';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <Route path='/Img' element={<Img/>}></Route>
 
       </Routes>
-    
+    <Footer/>
     </div>
   );
 }

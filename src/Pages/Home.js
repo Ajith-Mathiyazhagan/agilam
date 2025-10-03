@@ -39,7 +39,7 @@ const Home = () => {
       style={{
         
         paddingTop: "20px",
-        background: `linear-gradient(135deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.04) 60%), url(${bg}) center/cover no-repeat fixed`,
+        background: `linear-gradient(135deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.04) 60%), url(${bg}) center/cover no-repeat fixed `,
      
       }}
     >
