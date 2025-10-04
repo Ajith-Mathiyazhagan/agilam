@@ -35,14 +35,7 @@ const Home = () => {
   };
 
   return (
-    <div
-      style={{
-        
-        paddingTop: "20px",
-        background: `linear-gradient(135deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.04) 60%), url(${bg}) center/cover no-repeat fixed `,
-     
-      }}
-    >
+    <div className=" my-3 p-3 rounded-4 ">
       {/* Hero Section */}
       <section className="container ">
         <div className="row align-items-center flex-md-row">
@@ -74,13 +67,13 @@ const Home = () => {
               <blockquote className="fw-bold fst-italic  text-danger fs-6 mb-1">
                 ✨ “அன்பும் சேவையும் சேர்ந்தால், சமூகத்தில் ஒளி விரிகிறது.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-success fs-6">
+              <blockquote className="fw-bold fst-italic text-success fs-6 mb-1">
                 ✨ “சமூக சேவை என்பது உதவி அல்ல, அது ஒவ்வொருவரின் பொறுப்பு.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-info fs-6">
+              <blockquote className="fw-bold fst-italic text-info fs-6 mb-1">
                 ✨ “அன்பும் கருணையும் இணைந்தால், சமூக மாற்றம் சக்திவாய்ந்ததாகிறது.”
               </blockquote>
-              <blockquote className="fw-bold fst-italic text-primary fs-6">
+              <blockquote className="fw-bold fst-italic text-primary fs-6 ">
                 ✨ “நாம் பகிரும் அன்பு, சமூகத்தில் நம்பிக்கை உருவாக்கும்.”
               </blockquote>
             </div>

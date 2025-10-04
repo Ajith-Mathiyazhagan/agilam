@@ -1,4 +1,5 @@
 
+
 .navbar{
 background-color: #220963;
   
@@ -58,3 +59,4 @@ border-radius: 40px 40px 40px 0px;
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 1.5rem 2.5rem rgba(255, 0, 25, 0.15), 0 0.5rem 1rem rgba(0,0,0,0.05);
 }
+/* Add this to your CSS file */   
