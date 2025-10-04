@@ -19,7 +19,7 @@ function App() {
 
   return (
     
-    <div className="App bg-fixed">
+    <div className="App bg-light">
        <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>

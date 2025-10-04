@@ -4,7 +4,7 @@ import edu from "../assets/edu.png";
 import anna from "../assets/aa.png";
 import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
-import bg from "../assets/bg2.png";
+
 import Img from "./Img";
 const Home = () => {
   const content = {
