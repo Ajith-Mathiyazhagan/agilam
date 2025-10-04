@@ -4,7 +4,7 @@ import edu from "../assets/edu.png";
 import anna from "../assets/aa.png";
 import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
-
+import Impact from "./Imapct";
 import Img from "./Img";
 import About from "./About";
 import { useNavigate } from "react-router-dom";
@@ -58,7 +58,7 @@ const navigate = useNavigate();
             <p className="text-dark fw-semibold  mb-4">{content.desc}</p>
             <div className="text-center mx-auto ">
   <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/Dashboard")}
         className="btn btn-danger  fw-bold mb-3 mx-auto d-flex align-items-center"
       >
         <BiUserPlus size={20} className="me-1" />
@@ -67,7 +67,7 @@ const navigate = useNavigate();
 
       {/* Volunteer / Help Button */}
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/TamilDashboard")}
         className="btn btn-primary  fw-bold  mx-auto d-flex align-items-center"
       >
         <BiLike size={20} className="" />
@@ -147,6 +147,7 @@ const navigate = useNavigate();
         <About/>
       </div>
       <Img/>
+      <Impact/>
     </div>
   );
 };
