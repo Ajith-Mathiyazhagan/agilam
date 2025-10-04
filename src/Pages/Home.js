@@ -7,6 +7,8 @@ import annan2 from "../assets/annan2.jpg";
 
 import Img from "./Img";
 import About from "./About";
+import { useNavigate } from "react-router-dom";
+import { BiUserPlus, BiLike } from "react-icons/bi";
 
 const Home = () => {
   const content = {
@@ -35,7 +37,7 @@ const Home = () => {
       },
     ],
   };
-
+const navigate = useNavigate();
   return (
     <div className=" my-4" >
       {/* Hero Section */}
@@ -54,12 +56,25 @@ const Home = () => {
           <div className="col-12 col-md-6 text-center text-md-start p-3  mb-md-0">
             <h2 className="fw-bold h1  text-danger mb-2">{content.title}</h2>
             <p className="text-dark fw-semibold  mb-4">{content.desc}</p>
-            <a href="#join" className="btn btn-danger btn shadow fw-bold mb-3  mx-1">
-              குருதித் தேவைக்கு 
-            </a>
-             <a href="#join" className="btn btn-primary btn shadow fw-bold mb-3 px-3 mx-1">
-             குருதி தந்து உதவ
-            </a>
+            <div className="text-center mx-auto ">
+  <button
+        onClick={() => navigate("/")}
+        className="btn btn-danger  fw-bold mb-3 mx-auto d-flex align-items-center"
+      >
+        <BiUserPlus size={20} className="me-1" />
+        உதவுப்பெறு 
+      </button>
+
+      {/* Volunteer / Help Button */}
+      <button
+        onClick={() => navigate("/")}
+        className="btn btn-primary  fw-bold  mx-auto d-flex align-items-center"
+      >
+        <BiLike size={20} className="" />
+        உதவிசெய்ய
+      </button>
+            </div>
+              
           
           </div>
         
