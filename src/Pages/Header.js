@@ -11,7 +11,7 @@ const Header = () => {
 
         {/* Toggle button for mobile view */}
         <button
-          className="navbar-toggler"
+          className="navbar-toggler mx-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

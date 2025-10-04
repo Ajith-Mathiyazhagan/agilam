@@ -6,6 +6,8 @@ import annan from "../assets/annan.jpg";
 import annan2 from "../assets/annan2.jpg";
 
 import Img from "./Img";
+import About from "./About";
+
 const Home = () => {
   const content = {
     title: "அகிலம் நண்பர்கள் அறக்கட்டளை 🤝",
@@ -35,7 +37,7 @@ const Home = () => {
   };
 
   return (
-    <div className=" my-3 p-3 rounded-4 ">
+    <div className=" my-4" >
       {/* Hero Section */}
       <section className="container ">
         <div className="row align-items-center flex-md-row">
@@ -63,15 +65,15 @@ const Home = () => {
         
         </div>
       </section>
-  <div className=" container  mb-2 mx-auto text-center">
+  <div className=" container  mb-2 mt-1 mx-auto text-center">
               <blockquote className="fw-bold fst-italic  text-danger fs-6 mb-1">
-                ✨ “அன்பும் சேவையும் சேர்ந்தால், சமூகத்தில் ஒளி விரிகிறது.”
+                ✨ “அன்பும் கருணையும் இணைந்தால், சமூக மாற்றம் சக்திவாய்ந்ததாகிறது.”
               </blockquote>
               <blockquote className="fw-bold fst-italic text-success fs-6 mb-1">
                 ✨ “சமூக சேவை என்பது உதவி அல்ல, அது ஒவ்வொருவரின் பொறுப்பு.”
               </blockquote>
               <blockquote className="fw-bold fst-italic text-info fs-6 mb-1">
-                ✨ “அன்பும் கருணையும் இணைந்தால், சமூக மாற்றம் சக்திவாய்ந்ததாகிறது.”
+                ✨ “அன்பும் சேவையும் சேர்ந்தால், சமூகத்தில் ஒளி விரிகிறது.”
               </blockquote>
               <blockquote className="fw-bold fst-italic text-primary fs-6 ">
                 ✨ “நாம் பகிரும் அன்பு, சமூகத்தில் நம்பிக்கை உருவாக்கும்.”
@@ -82,14 +84,14 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="container py-2">
         <div className="row g-1">
-          <div className="col-md-6 mb-2 mt-md-0">
-            <div className="p-3 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
+          <div className="col-md-6 mb-2 mt-md-0  ">
+            <div className="p-3 border-0 rounded-4 shadow-lg bg-white h-100 text-center">
               <h4 className="text-danger mb-2 fw-bold">🎯 எங்கள் நோக்கம்</h4>
               <p className="text-muted mb-0">அனைவருக்கும் சமத்துவமான சமூக சேவை</p>
             </div>
           </div>
-          <div className="col-md-6 mb-2 mt-md-0">
-            <div className="p-3 border-0 rounded-4 shadow-sm bg-white h-100 text-center">
+          <div className="col-md-6 mb-2 mt-md-0  ">
+            <div className="p-3 border-0 rounded-4 shadow-lg bg-white h-100 text-center">
               <h4 className="text-success mb-2 fw-bold">🌱 எங்கள் பார்வை</h4>
               <p className="text-muted mb-0">கல்வி, ஆரோக்கியம், சமூக முன்னேற்றம்</p>
             </div>
@@ -126,6 +128,9 @@ const Home = () => {
           ))}
         </div>
       </section> 
+      <div>
+        <About/>
+      </div>
       <Img/>
     </div>
   );
