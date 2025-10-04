@@ -34,7 +34,7 @@ const Img = () => {
   return (
     <div
       className="container-fluid my-2"
-      style={{ overflow: "hidden", padding: "10px 0" }}
+      style={{ overflow: "hidden", padding: "10px 0 0 " }}
     >
       <div
         style={{
@@ -46,7 +46,7 @@ const Img = () => {
         {images.concat(images).map((img, index) => (
           <div
             key={index}
-            className="p-1 border-0 rounded-4 shadow-sm bg-white text-center"
+            className="p-1 my-2 border-0 rounded-4 shadow-sm bg-white text-center"
             style={{ flex: "0 0 auto", width: "260px", marginRight: "15px" }}
           >
             <img 

@@ -73,9 +73,9 @@ const About = () => {
       <div className="container py-3 position-relative">
         {/* Heading */}
         <div className="text-center mb-0">
-          <h2 className="fw-bold text-center mb-3 heading-underline "><i className="bi bi-heart-fill text-danger me-2"></i>
+          <h3 className="fw-bold text-center mb-3 heading-underline "><i className="bi bi-heart-fill text-danger me-2"></i>
 
-எங்கள் செயற்பாடுகள்</h2>
+எங்கள் செயல்பாடுகள்</h3>
           <p className="text-light opacity-80 fs-6">
             2015 முதல் சமூக நலனுக்காக பணியாற்றும் <b className="text-danger">அகிலம் நண்பர்கள் அறக்கட்டளை</b> —  
             கல்வி, சுகாதாரம் மற்றும் மனிதநேயம் ஆகிய துறைகளில் சேவை செய்கிறது.

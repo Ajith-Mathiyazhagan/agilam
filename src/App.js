@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import Img from './Pages/Img';
 import Footer from './Pages/Footer';
 import About from './Pages/About';
+import Impact from './Pages/Imapct';
 
 function App() {
    useEffect(() => {
@@ -28,8 +29,12 @@ function App() {
         <Route path='/Header' element={<Header/>}></Route>
         <Route path='/Img' element={<Img/>}></Route>
         <Route path='/About' element={<About />}></Route>
+        <Route path='/Impact' element={<Impact/>}></Route>
+        
+        
 
       </Routes>
+      <Impact/>
     <Footer/>
     </div>
   );
