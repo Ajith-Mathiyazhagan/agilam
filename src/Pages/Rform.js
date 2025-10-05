@@ -18,9 +18,9 @@ const Rform = () => {
     consent: false,
   });
    // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+      }, []);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;

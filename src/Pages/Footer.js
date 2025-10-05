@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const handleNavClick = useNavigate();
   return (
     <footer className="bg-dark text-white pt-4 ">
       <div className="container text-center text-md-left">
@@ -17,20 +19,37 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="col-md-4 col-lg-4 col-xl-4 mx-auto ">
+          <div className="col-md-4 col-lg-4 col-xl-4 mx-auto text-center"> 
             <h5 className="text-uppercase mb-2 font-weight-bold">விரைவு இணைப்புகள்</h5>
-            <p className="mb-1">
-              <a href="#home" className="text-white text-decoration-none">முகப்பு</a>
-            </p>
-            <p className="mb-1">
-              <a href="#about" className="text-white text-decoration-none">எங்களைப் பற்றி</a>
-            </p>
-            <p className="mb-1">
-              <a href="#contact" className="text-white text-decoration-none">தொடர்பு</a>
-            </p>
-            <p>
-              <a href="#donate" className="text-white text-decoration-none">நன்கொடை செய்யவும்</a>
-            </p>
+              <div className="d-flex flex-column align-items-center">
+               <button 
+            className="btn btn-link text-white text-decoration-none d-flex align-items-center"
+            onClick={() => handleNavClick("/FounderDetails")}
+          >
+            <i className="bi bi-person-badge-fill me-2 text-danger"></i> முகப்பு
+          </button>
+
+          <button 
+            className="btn btn-link text-white text-decoration-none d-flex align-items-center"
+            onClick={() => handleNavClick("/Help")}
+          >
+            <i className="bi bi-hand-thumbs-up-fill me-2 text-danger"></i> உதவி செய்ய  
+          </button>
+
+          <button 
+            className="btn btn-link text-white text-decoration-none d-flex align-items-center"
+            onClick={() => handleNavClick("/Whatsapp")}
+          >
+            <i className="bi bi-chat-dots-fill me-2 text-danger"></i> உதவி செய்ய
+          </button>
+
+          <button 
+            className="btn btn-link text-white text-decoration-none d-flex align-items-center"
+            onClick={() => handleNavClick("/Contact")}
+          >
+            <i className="bi bi-telephone-fill me-2 text-danger"></i> உதவி பெற
+          </button>
+          </div>
           </div>
 
           {/* Contact Section */}

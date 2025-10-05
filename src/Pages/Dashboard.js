@@ -1,10 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import { FaTint, FaUserFriends, FaBook, FaExclamationTriangle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-
+ 
+     useEffect(() => {
+         window.scrollTo({ top: 0 });
+       }, []);
   const services = [
     {
       title: "ரத்த தானம் பெற",
@@ -25,20 +29,20 @@ const Dashboard = () => {
       icon: <FaBook size={30} />,
       description: "ஏழை எளிய  மாணவர்களுக்கு கல்வி உதவிகளைப் பெறவும்.",
       bg: "bg-success",
-      path: "/education-help"
+      path: "/whatsapp" // route to navigate
     },
     {
       title: "பேரிடர் உதவிகளைப் கேட்க",
       icon: <FaExclamationTriangle size={30} />,
       description: "சாதாரண பேரிடர் உதவிகளை விரைவில் பெறுங்கள்.",
       bg: "bg-primary",
-      path: "/disaster-help"
+      path: "/Wh"
     },
   ];
 
   return (
-    <div className="container py-5">
-      <h2 className="text-center mb-5 text-danger fw-bold">அகிலம் நண்பர்கள் அறக்கட்டளை</h2>
+    <div className="container py-3">
+      <h2 className="text-center mb-3 text-danger fw-bold">அகிலம் நண்பர்கள் அறக்கட்டளை 🤝</h2>
       <div className="row g-4">
         {services.map((service, idx) => (
           <div className="col-md-6 col-lg-3" key={idx}>

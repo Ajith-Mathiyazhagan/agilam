@@ -20,6 +20,9 @@ import Donor from './Pages/DonorForm';
 import Dashboard from './Pages/Dashboard';
 import TamilDashboard from './Pages/TamilDashboard';
 import FounderDetails from './Pages/FounderDetails';
+import Whatsapp from './Pages/Whatsapp';
+import Wh from './Pages/Wh';
+import Help from './Pages/Help';
 
 
 function App() {
@@ -45,6 +48,11 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
         <Route path='/TamilDashboard' element={<TamilDashboard/>}></Route>
         <Route path='/FounderDetails' element={<FounderDetails/>}></Route>
+        <Route path='/Whatsapp' element={<Whatsapp/>}></Route>
+        <Route path='/Wh' element={<Wh/>}></Route>
+        <Route path='/Help' element={<Help/>}></Route>
+        
+
         
         
         

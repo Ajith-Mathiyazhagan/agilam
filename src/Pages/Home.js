@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import bg1 from "../assets/blood1.jpg";
 import edu from "../assets/edu.png";
 import anna from "../assets/aa.png";
@@ -38,6 +39,9 @@ const Home = () => {
     ],
   };
 const navigate = useNavigate();
+ useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div className=" my-4" >
       {/* Hero Section */}
