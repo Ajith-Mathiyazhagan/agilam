@@ -23,6 +23,7 @@ import FounderDetails from './Pages/FounderDetails';
 import Whatsapp from './Pages/Whatsapp';
 import Wh from './Pages/Wh';
 import Help from './Pages/Help';
+import Newhome from './Pages/Newhome';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
 
   return (
     
-    <div className="App bg-light ">
+    <div className=" ">
        <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -51,6 +52,7 @@ function App() {
         <Route path='/Whatsapp' element={<Whatsapp/>}></Route>
         <Route path='/Wh' element={<Wh/>}></Route>
         <Route path='/Help' element={<Help/>}></Route>
+        <Route path='/Newhome' element={<Newhome/>}></Route>
         
 
         

@@ -10,6 +10,7 @@ import Img from "./Img";
 import About from "./About";
 import { useNavigate } from "react-router-dom";
 import { BiUserPlus, BiLike } from "react-icons/bi";
+import Newhome from "./Newhome";
 
 const Home = () => {
   const content = {
@@ -44,6 +45,9 @@ const navigate = useNavigate();
   }, []);
   return (
     <div className=" my-4" >
+
+     <Newhome/>
+
       {/* Hero Section */}
       <section className="container ">
         <div className="row align-items-center flex-md-row">

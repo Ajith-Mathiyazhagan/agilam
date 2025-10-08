@@ -41,7 +41,7 @@ const Header = () => {
         <img
           src={aaa}
           alt="Logo"
-          style={{ height: "50px", width: "250px", cursor: "pointer" }}
+          style={{ height: "50px", width: "150px", cursor: "pointer" }}
           className="ms-2"
         />
 

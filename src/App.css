@@ -92,3 +92,28 @@ border-radius: 40px 40px 40px 0px;
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+
+
+.br {
+  border-radius: 70px;
+}
+
+/* Responsive text size */
+p {
+  font-size: clamp(9px, 2.5vw, 18px);
+}
+
+/* Logo smaller in desktop */
+@media (min-width: 992px) {
+  .logo-img {
+    width: 60% !important;
+  }
+}
+
+/* For tablets - medium size */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-img {
+    width: 75% !important;
+  }
+}
